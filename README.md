@@ -1,1 +1,1 @@
-Dit is de GitHub repo van iTF04 groep 2.
+Dit is de GitHub repo van 1ITF04 groep 2.
