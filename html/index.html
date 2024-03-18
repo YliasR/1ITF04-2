@@ -51,8 +51,7 @@
 
     // Create a cube
     const geometry = new THREE.BoxGeometry();
-    const texture = new THREE.TextureLoader().load('../img/fops.png');
-    const material = new THREE.MeshStandardMaterial({ map: texture });
+    const material = new THREE.MeshStandardMaterial({ color: 0x0000ff }); // Blue color
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
