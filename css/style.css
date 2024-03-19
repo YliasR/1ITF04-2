@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #507EA6;
+    color: white;
+}
+
+header {
+    background-color: #2C3531;
+}
+
+.info {
+    background-color: #116466;
+}
+
 h1 {
     font-size: 26px;
 }
