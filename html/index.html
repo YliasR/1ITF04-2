@@ -21,29 +21,29 @@
 
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <header class="d-sm-flex justify-content-sm-between">
-        <h1 class="py-sm-3 col-sm-4 m-sm-0 px-sm-3">Overstromingskaart</h1>
-        <nav class="col-sm-7 d-sm-flex text-center">
-<!--            bij de nav bar met columns werken, anders werkt de hover niet-->
-            <p class="col-sm-4 py-sm-4 m-sm-0">Weetjes</p>
-            <p class="col-sm-4 py-sm-4 m-sm-0">Andere kaarten</p>
-            <p class="col-sm-4 py-sm-4 m-sm-0">Etc.</p>
+    <header class="d-flex justify-content-between flex-column flex-md-row">
+        <h1 class="text-center py-3 m-0 px-3 col-md-4">Overstromingskaart</h1>
+        <nav class="d-flex text-center col-md-8">
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Weetjes</p></a>
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Andere kaarten</p></a>
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Etc.</p></a>
         </nav>
     </header>
-    <div class="info p-sm-3 my-sm-4">
+    <div class="info p-3 my-4">
         <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
-        <p>Deze website is momenteel nog onder ontwikkeling en kan fouten bevatten.</p>
+        <p><i class="fa-solid fa-circle-info me-1"></i>Deze website is momenteel nog onder ontwikkeling en kan fouten bevatten.</p>
     </div>
-    <div class="d-sm-flex flex-sm-column">
-        <div class="px-sm-3 w-100 mb-smv-4">
+    <div class="d-flex flex-column flex-lg-row">
+        <div class="px-3 w-100 mb-4">
             <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
             <input type="range" class="form-range" min="0" max="250" step="25" id="customRange3">
         </div>
         <div class="w-100">
-            <img class="w-100 h-auto" src="../img/filler-img.webp" alt="lege afbeelding">
+            <img class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
         </div>
     </div>
 </body>
