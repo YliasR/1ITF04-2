@@ -21,32 +21,36 @@
 
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body class="p-3">
-  <header class="d-flex">
-      <h1 class="col-4 pt-1 mb-0">Titel</h1>
-      <nav class="col-6 d-flex justify-content-between align-items-center pt-3">
-          <p>onderwerp 1</p>
-          <p>onderwerp 2</p>
-          <p>Etc.</p>
-      </nav>
-  </header>
-  <hr>
-  <div class="d-flex justify-content-between">
-  <div class="col-4 row">
-      <label for="customRange3" class="form-label">Slider 1</label>
-      <input type="range" class="form-range" min="0" max="250" step="25" id="SliderWaterLevel">
-      <label for="customRange3" class="form-label">Slider 2</label>
-      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange">
-      <label for="customRange3" class="form-label">Slider 3</label>
-      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange">
-  </div>
-  <div class="col-6">
-      <div><img id="WaterFloodMap" src="../img/filler-img.webp" alt="lege afbeelding"></div>
-  </div>
-  </div>
+<body>
+    <header class="d-flex justify-content-between flex-column flex-md-row">
+        <h1 class="text-center py-3 m-0 px-3 col-md-4">Overstromingskaart</h1>
+        <nav class="d-flex text-center col-md-8">
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Weetjes</p></a>
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Andere kaarten</p></a>
+            <a class="col-4 text-center py-4 m-0" href="#"><p>Etc.</p></a>
+        </nav>
+    </header>
+    <div class="info p-3 my-4">
+        <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
+        <p><i class="fa-solid fa-circle-info me-1"></i>Deze website is momenteel nog in ontwikkeling en kan mogelijks fouten bevatten.</p>
+    </div>
+    <div class="d-flex flex-column flex-lg-row">
+        <div class="px-3 w-100 mb-4">
+            <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
+            <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
+            <p id="StijgingWater">Stijging: 0 meter</p>
+        </div>
+        <div class="w-100">
+            <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+        </div>
+    </div>
+
+
   <script src="../js/main.js"></script>
+
 </body>
 
 </html>
