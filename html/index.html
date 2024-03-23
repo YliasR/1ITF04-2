@@ -40,10 +40,12 @@
     <div class="d-flex flex-column flex-lg-row">
         <div class="px-3 w-100 mb-4">
             <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
-            <input type="range" class="form-range" min="0" max="250" step="25" id="customRange3">
+            <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
+            <p id="StijgingWater">Stijging: 0 meter</p>
         </div>
         <div class="w-100">
-            <img class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+            <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+
         </div>
     </div>
 
