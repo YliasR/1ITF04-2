@@ -7,9 +7,6 @@ function adjustWaterLevel(){
     console.log(sliderValue)
 
     switch (sliderValue){
-        case '0':
-            image.src = "..img/Maps/0Meuropa.png"
-            stijgingWater.innerHTML = "Stijging: 0 meter"
         case '1':
             image.src = "../img/Maps/5Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 5 meter"
@@ -29,6 +26,11 @@ function adjustWaterLevel(){
         case '5':
             image.src = "../img/Maps/100Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 100 meter"
+            break;
+        default: 
+        case '0':
+            image.src = "../img/Maps/europe.png"
+            stijgingWater.innerHTML = "Stijging: 0 meter"
             break;
     }
 }
