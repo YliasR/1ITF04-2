@@ -1,12 +1,21 @@
+// variables slider
 var slider = document.getElementById('SliderWaterLevel');
-var image = document.getElementById('WaterFloodMap')
-var stijgingWater = document.getElementById('StijgingWater')
+var image = document.getElementById('WaterFloodMap');
+var stijgingWater = document.getElementById('StijgingWater');
 
+//variables json
+
+
+//functionality of slider
 function adjustWaterLevel(){
     sliderValue = slider.value;
     console.log(sliderValue)
 
     switch (sliderValue){
+        case '0':
+            image.src = "../img/Maps/europe.png"
+            stijgingWater.innerHTML = "Stijging: 0 meter"
+            break;
         case '1':
             image.src = "../img/Maps/5Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 5 meter"
@@ -27,15 +36,17 @@ function adjustWaterLevel(){
             image.src = "../img/Maps/100Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 100 meter"
             break;
-        default: 
-        case '0':
-            image.src = "../img/Maps/europe.png"
-            stijgingWater.innerHTML = "Stijging: 0 meter"
-            break;
     }
 }
 
 adjustWaterLevel();
 
 slider.addEventListener('input', adjustWaterLevel)
+
+
+
+// functionality of json weetjes
+
+// Assuming you have a JSON file named data.json in the same directory
+
 
