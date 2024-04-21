@@ -41,12 +41,4 @@ function adjustWaterLevel(){
 
 adjustWaterLevel();
 
-slider.addEventListener('input', adjustWaterLevel)
-
-
-
-// functionality of json weetjes
-
-// Assuming you have a JSON file named data.json in the same directory
-
-
+slider.addEventListener('input', adjustWaterLevel);
