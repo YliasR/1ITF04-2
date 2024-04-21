@@ -40,3 +40,30 @@ a:hover, .dropdown-item:hover {
     background-color: #116466;
     color: white;
 }
+
+.title:hover{
+    background-color: #2C3531;
+}
+
+.title-weetjes{
+    color: black;
+    font-size: 34px;
+}
+
+#list-of-facts{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#list-of-facts li{
+    color: #2C3531;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 2px #116466;
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #116466;
+    color: #a3c5f7;
+}

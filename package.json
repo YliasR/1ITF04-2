@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "mysql": "^2.18.1",
     "three": "^0.162.0"
   }
 }

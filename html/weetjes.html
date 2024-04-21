@@ -25,28 +25,28 @@
 </head>
 
 <body>
-<header class="d-flex justify-content-between flex-column flex-md-row">
-  <h1 class="text-center py-3 m-0 px-3 col-md-4">Overstromingskaart</h1>
-  <nav class="d-flex text-center col-md-8">
-    <a class="col-4 text-center py-4 m-0" href="#"><p>Weetjes</p></a>
-    <div class="nav-item dropdown col-4 text-center m-0">
-      <a class="nav-link dropdown-toggle pt-4 pb-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Andere kaarten</a>
-      <div class="dropdown-menu">
-        <div><a class="dropdown-item" href="index.html">Europa</a></div>
-        <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
-        <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
-      </div>
-    </div>
-    <a class="col-4 text-center py-4 m-0" href="#"><p>Etc.</p></a>
-  </nav>
+  <header class="d-flex justify-content-between flex-column flex-md-row">
+    <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Overstromingskaart</a></h1>
+    <nav class="d-flex text-center col-md-8">
+        <a class="col-4 text-center py-4 m-0" href="weetjes.html"><p class="m-0">Weetjes</p></a>
+        <div class="nav-item dropdown col-4 text-center m-0">
+          <a class="nav-link dropdown-toggle pt-4 pb-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Andere kaarten</a>
+          <div class="dropdown-menu">
+            <div><a class="dropdown-item" href="index.html">Europa</a></div>
+            <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
+            <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
+          </div>
+        </div>
+        <a class="col-4 text-center py-4 m-0" href="#"><p class="m-0">Etc.</p></a>
+    </nav>
 </header>
 <div>
-  <h2 class="text-center">Weetjes</h2>
+  <h2 class="text-center m-4 title-weetjes">Weetjes</h2>
 </div>
+<ul id="list-of-facts" class="col-10 offset-1 text-center d-flex"></ul>
 
 
-<script src="../js/main.js"></script>
-
+<script src="../js/weetjespage.js"></script>
 </body>
 
 </html>
