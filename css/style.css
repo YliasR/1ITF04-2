@@ -13,6 +13,11 @@ header {
     background-color: #2C3531;
 }
 
+.dropdown-menu {
+    background-color: #2C3531;
+    color: white;
+}
+
 .info {
     background-color: #116466;
     border-left: 5px solid #2C3531;
@@ -22,11 +27,16 @@ h1 {
     font-size: 26px;
 }
 
-a:link, a:visited, .dropdown {
+nav a {
+    transition: background-color 0.3s ease;
+}
+
+a:link, a:visited {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+a:hover, .dropdown-item:hover {
     background-color: #116466;
+    color: white;
 }
