@@ -42,7 +42,22 @@
 
   <div>
     <h2>Simulatie formulier van schadekosten</h2>
-
+    <select class="form-select" aria-label="land">
+      <option selected>Welk land?</option>
+      <option value="1">België</option>
+      <option value="2">Spanje</option>
+      <option value="3">Verenigd Koninkrijk</option>
+    </select>
+    <input type="text" class="form-control" id="onderwater" placeholder="Hoeveel meter staat u onderwater?">
+    <input type="text" class="form-control" id="auto" placeholder="Hoeveel auto's heeft u?">
+    <select class="form-select" aria-label="woonplaats">
+      <option selected>Huis of appartement?</option>
+      <option value="1">Huis</option>
+      <option value="2">Appartement</option>
+    </select>
+    <input type="text" class="form-control" id="hoogte" placeholder="Hoeveel meter boven de grond is uw appartement (als u geen appartement heeft, vul hier dan 0 in)?">
+    <button type="submit" class="btn btn-primary">Berekenen</button>
+    <label for="resultaat" class="form-label"></label>
   </div>
 </body>
 </html>
