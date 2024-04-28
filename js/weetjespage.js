@@ -24,10 +24,17 @@ const facts = [
 
 function createFactList(){
     const list = document.getElementById("list-of-facts");
+    let counter = 1
     facts.forEach(fact => {
         const listItem = document.createElement("li");
-        listItem.textContent = fact;
+        const listTitle = document.createElement("p");
+        const factContent = document.createElement("p")
+        listTitle.textContent = ("Fact: #" + counter)
+        factContent.textContent = fact;
         list.appendChild(listItem);
+        listItem.appendChild(listTitle)
+        listItem.appendChild(factContent)
+        counter = counter + 1
     });
 }
 

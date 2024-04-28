@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simulatie kosten</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style.css">
   <meta name="description" content="">
 
@@ -24,43 +28,85 @@
 </head>
 
 <body>
-  <header class="d-flex justify-content-between flex-column flex-md-row">
-    <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Overstromingskaart</a></h1>
-    <nav class="d-flex text-center col-md-8">
-      <a class="col-4 text-center py-4 m-0" href="weetjes.html"><p class="m-0">Weetjes</p></a>
-      <div class="nav-item dropdown col-4 text-center m-0">
-        <a class="nav-link dropdown-toggle pt-4 pb-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Andere kaarten</a>
-        <div class="dropdown-menu">
-          <div><a class="dropdown-item" href="index.html">Europa</a></div>
-          <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
-          <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
+  <header class="py-2 d-flex justify-content-center col-12">
+    <div class="col-10 d-flex justify-content-between flex-column flex-md-row">
+      <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Logo + Name</a></h1>
+      <nav class="d-flex text-center col-md-8">
+        <div class="col-4">
+          <a class="col-4" href="index.html">Flood Map</a>
         </div>
-      </div>
-      <a class="col-4 text-center py-4 m-0" href="#"><p class="m-0">Etc.</p></a>
-    </nav>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="weetjes.html">Facts</a>
+        </div>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="simulatie.html">Cost Simulation</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <div>
-    <h2>Simulatie formulier van schadekosten</h2>
-    <p>Dit is een heel ruwe schatting en bedoelt voor educatieve doeleinden.</p>
-    <select class="form-select" aria-label="land" id="land">
-      <option selected>Welk land?</option>
-      <option value="1">België</option>
-      <option value="2">Zwitserland</option>
-      <option value="3">Verenigd Koninkrijk</option>
-    </select>
-    <input type="text" class="form-control" id="onderwater" placeholder="Hoeveel meter staat u onderwater?">
-    <input type="text" class="form-control" id="auto" placeholder="Hoeveel auto's heeft u?">
-    <select class="form-select" aria-label="woonplaats" id="woonplaats">
-      <option selected>Huis of appartement?</option>
-      <option value="1">Huis</option>
-      <option value="2">Appartement</option>
-    </select>
-    <input type="text" class="form-control" id="hoogte" placeholder="Hoeveel meter boven de grond is uw appartement (als u geen appartement heeft, vul hier dan 0 in)?">
-    <button type="submit" class="btn btn-primary" id="button">Berekenen</button>
-    <p id="resultaat"></p>
-  </div>
+  <div class="content col-10 offset-1">
+    <div class="d-flex flex-column text-center col-8 offset-2 mt-5">
+      <h2>Flood cost estimation form</h2>
+      <p>Use our simulation form to estimate the potential costs of damages to your home or vehicle in the event of a
+        flood.</p>
+      <p class="warning">Disclaimer: This estimation form provides fictitious scenarios, and the data generated is not
+        guaranteed to be 100% accurate. Please use it for informational purposes only.</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="bottom-line col-6 text-center m-5"></div>
+    </div>
 
+    <div class="col-8 offset-2">
+      <div class="mb-4">
+        <p class="title-form">In which country do you live?</p>
+        <select class="form-select" aria-label="land" id="land">
+          <option selected disabled hidden>Select a country</option>
+          <option value="1">België</option>
+          <option value="2">Zwitserland</option>
+          <option value="3">Verenigd Koninkrijk</option>
+        </select>
+      </div>
+      <div class="my-4">
+        <p class="title-form">How many meters is your property under water?</p>
+        <input type="text" class="form-control" id="onderwater" placeholder="Enter a value in meters">
+      </div>
+      <div class="my-4">
+        <p class="title-form">How many cars do you have?</p>
+        <input type="text" class="form-control" id="auto" placeholder="Enter a value">
+      </div>
+      <div class="my-4">
+        <p class="title-form">Do you live in a house or an appartment?</p>
+        <select class="form-select" aria-label="woonplaats" id="woonplaats">
+          <option selected disabled hidden>Select an option</option>
+          <option value="1">Huis</option>
+          <option value="2">Appartement</option>
+        </select>
+      </div>
+      <div class="my-4">
+        <p class="title-form">How many meters is your appartment above ground level? (If you selected house, enter 0
+          below)</p>
+        <input type="text" class="form-control" id="hoogte" placeholder="Enter a value in meters">
+      </div>
+      <div class="my-4">
+        <button type="submit" class="btn btn-primary" id="button">Berekenen</button>
+      </div>
+      <div class="my-4 text-center">
+        <p id="resultaat"></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
+      <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
+      information independently for accuracy.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="text-center">
+      <p class="mb-0 mt-5 py-4">Copyright &copy;<a class="link-footer" href="https://thomasmore.be/nl">Thomasmore</a> - 2024</p>
+    </div>
+  </footer>
   <script src="../js/simulatie.js"></script>
 </body>
+
 </html>

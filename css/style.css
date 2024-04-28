@@ -16,6 +16,16 @@ header{
 
 nav, nav div{
     align-items: center;
+    font-weight: 500;
+}
+
+nav a{
+    border-bottom: solid 2px transparent;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    border-bottom: solid 2px black;
 }
 
 img{
@@ -23,16 +33,11 @@ img{
     border-radius: 10px;
 }
 
-.dropdown-menu {
-    background-color: beige;
-    color: black;
-}
-
 h1 {
     font-size: 26px;
 }
 
-a:link, a:visited {
+content a:link, a:visited, header a:link{
     text-decoration: none;
     color: black;
 }
@@ -49,16 +54,19 @@ a:link, a:visited {
 }
 
 #list-of-facts li{
-    color: #2C3531;
     list-style: none;
     margin-top: 15px;
     margin-bottom: 15px;
-    border: solid 2px #116466;
-    font-size: 25px;
-    border-radius: 50px;
+    font-size: 22px;
+    border-radius: 5px;
     padding: 15px;
-    background-color: #116466;
-    color: #a3c5f7;
+    border: solid 5px #C8E0F4;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+#list-of-facts li p:nth-child(1)
+{
+    font-weight: 500;
 }
 
 .alert{
@@ -82,6 +90,7 @@ a:link, a:visited {
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
   
 .container {
   position: relative;
@@ -119,3 +128,49 @@ circle:hover {
   display: none; /* Initially hidden */
   z-index: 5;
 }
+
+.info{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.random-fact-title, .additional-info{
+    font-weight: 500;
+}
+
+.warning{
+    color: red;
+    font-weight: 400;
+}
+
+.title-form{
+    font-weight: 500;
+}
+
+.btn{
+    background-color: #C8E0F4;
+    color: #031927;
+}
+
+footer{
+    align-items: center;
+    background-color: rgba(80, 138, 168, 0.5);
+}
+
+.link-footer{
+    text-decoration: underline;
+}
+
+.link-footer:hover{
+    color: #1e88ff;
+}
+
+#resultaat{
+    padding: 25px;
+    border: #C23B22 solid 4px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    display: none;
+}
+
