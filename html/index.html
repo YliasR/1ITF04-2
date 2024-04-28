@@ -69,8 +69,17 @@
           <p class="pt-4 random-fact-title">Random fact:</p>
           <p id="random-fact"></p>
         </div>
-        <div class="w-100">
+        <div class="w-100 position-relative">
           <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+          <svg class="svg-overlay position-absolute top-0 start-0">
+            <circle id="België" class="circle" cx="46%" cy="58.75%" r="5" fill="black" opacity="0.5" />
+            <text id="BelgiëText" x="48%" y="59%" fill="black" font-size="12">België</text>
+            <circle id="Frankrijk" class="circle" cx="43%" cy="66%" r="5" fill="black" opacity="0.5" />
+            <text id="FrankrijkText" x="45%" y="66%" fill="black" font-size="12">Frankrijk</text>
+            <circle id="Nederland" class="circle" cx="46.5%" cy="55.5%" r="5" fill="black" opacity="0.5" />
+            <text id="NederlandText" x="48%" y="55.5%" fill="black" font-size="12">Nederland</text>
+            <div id="popup" class="popup position-absolute top-0 start-50"></div>
+          </svg>
         </div>
       </div>
     </div>
@@ -110,6 +119,7 @@
 
   <script src="../js/main.js"></script>
   <script src="../js/randomFact.js"></script>
+  <script src="../js/hoverLanden.js"></script>
 
 </body>
 
