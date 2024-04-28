@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gevolg van aardopwarming</title>
+  <title>Flood Map</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style.css">
   <meta name="description" content="">
 
@@ -25,21 +26,82 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+  
+<body class="col-12">
+  <header class="py-2 d-flex justify-content-center col-12">
+    <div class="col-10 d-flex justify-content-between flex-column flex-md-row">
+      <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Logo + Name</a></h1>
+      <nav class="d-flex text-center col-md-8">
+        <a class="col-4" href="index.html">Flood Map</a>
+        <a class="col-4 text-center py-4 m-0" href="weetjes.html">
+          <p class="m-0">Facts</p>
+        </a>
+        <!--
+        <div class="nav-item dropdown col-4 text-center m-0">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Andere kaarten</a>
+          <div class="dropdown-menu">
+            <div><a class="dropdown-item" href="index.html">Europa</a></div>
+            <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
+            <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
+          </div>
+        </div>
+        -->
+        <a class="col-4 text-center py-4 m-0" href="#">
+          <p class="m-0">Kosten simulatie</p>
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<body>
-<header class="d-flex justify-content-between flex-column flex-md-row">
-  <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Overstromingskaart</a></h1>
-  <nav class="d-flex text-center col-md-8">
-    <a class="col-4 text-center py-4 m-0" href="weetjes.html">
-      <p class="m-0">Weetjes</p>
-    </a>
-    <div class="nav-item dropdown col-4 text-center m-0">
-      <a class="nav-link dropdown-toggle pt-4 pb-5" data-bs-toggle="dropdown" href="#" role="button"
-         aria-expanded="false">Andere kaarten</a>
-      <div class="dropdown-menu">
-        <div><a class="dropdown-item" href="index.html">Europa</a></div>
-        <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
-        <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
+  <div class="content col-10 offset-1">
+    <div class="d-flex flex-column text-center col-8 offset-2 mt-5">
+        <h3>Interactive Maps: Flood Risk and Climate Data Visualization</h3>
+        <p>Explore our interactive maps to assess flood risk in your area and track temperature and CO2 levels. Gain insights into climate trends and potential environmental hazards.</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="bottom-line col-6 text-center m-5"></div>
+    </div>
+
+    <div class="subject mb-5">
+      <div class="info ">
+        <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
+      </div>
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="px-3 w-100 mb-4">
+          <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
+          <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
+          <p id="StijgingWater">Stijging: 0 meter</p>
+          <p>Totale oppervlakte Europa: 10 530 000 km²</p>
+          <p id="oppervlakte">Totale oppervlakte onder water: </p>
+          <p class="pt-4">Random fact:</p>
+          <p id="random-fact"></p>
+        </div>
+        <div class="w-100">
+          <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+        </div>
+      </div>
+    </div>
+
+    <div class="subject">
+      <div class="info p-3 my-4">
+        <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
+        <p><i class="fa-solid fa-circle-info me-1"></i>Deze website is momenteel nog onder ontwikkeling en kan fouten
+          bevatten.</p>
+      </div>
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="px-3 w-100 mb-4">
+          <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
+          <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
+          <p id="StijgingWater">Stijging: 0 meter</p>
+          <p>Totale oppervlakte Europa: 10 530 000 km²</p>
+          <p id="oppervlakte">Totale oppervlakte onder water: </p>
+          <p class="pt-4">Random fact:</p>
+          <p id="random-fact"></p>
+        </div>
+        <div class="w-100">
+          <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+        </div>
       </div>
     </div>
     <a class="col-4 text-center py-4 m-0" href="#">
@@ -48,39 +110,17 @@
   </nav>
 </header>
 
-
-<div class="info p-3 my-4">
-  <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
-  <p><i class="fa-solid fa-circle-info me-1"></i>Deze website is momenteel nog onder ontwikkeling en kan fouten
-    bevatten.</p>
-</div>
-<div class="d-flex flex-column flex-lg-row">
-  <div class="px-3 w-100 mb-4">
-    <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
-    <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
-    <p id="StijgingWater">Stijging: 0 meter</p>
-    <p>Totale oppervlakte Europa: 10 530 000 km²</p>
-    <p id="oppervlakte">Totale oppervlakte onder water: </p>
-    <p class="pt-4">Random fact:</p>
-    <p id="random-fact"></p>
+    <footer>
+      <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
+        <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
+        information independently for accuracy.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
   </div>
-  <div class="w-100 position-relative">
-    <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
-    <svg class="svg-overlay position-absolute top-0 start-0">
-      <circle id="België" class="circle" cx="46%" cy="59%" r="5" fill="black" opacity="0.5" />
-      <text id="BelgiëText" x="48%" y="59%" fill="black" font-size="12">België</text>
-      <circle id="Frankrijk" class="circle" cx="43%" cy="66%" r="5" fill="black" opacity="0.5" />
-      <text id="FrankrijkText" x="45%" y="66%" fill="black" font-size="12">Frankrijk</text>
-      <circle id="Nederland" class="circle" cx="46.5%" cy="55.5%" r="5" fill="black" opacity="0.5" />
-      <text id="NederlandText" x="48%" y="55.5%" fill="black" font-size="12">Nederland</text>
-    </svg>
-    <div id="popup" class="popup"></div>
-  </div>
-</div>
+  </footer>
 
-<script src="../js/hoverLanden.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/randomFact.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/randomFact.js"></script>
 
 </body>
 
