@@ -54,7 +54,8 @@ button.addEventListener("click", function() {
 
   // eindberekening
   kosten *= multiplier;
-  resultaatTekst = "Ruwe schatting van schade aan uw domein: €" + kosten;
+  resultaat.style.display = "block"
+  resultaatTekst = "Rough estimate of the damages to your property: €" + kosten;
 
   // het resultaat tonen
   resultaat.innerHTML = resultaatTekst;

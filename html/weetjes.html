@@ -25,27 +25,40 @@
 </head>
 
 <body>
-  <header class="d-flex justify-content-between flex-column flex-md-row">
-    <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Overstromingskaart</a></h1>
-    <nav class="d-flex text-center col-md-8">
-        <a class="col-4 text-center py-4 m-0" href="weetjes.html"><p class="m-0">Weetjes</p></a>
-        <div class="nav-item dropdown col-4 text-center m-0">
-          <a class="nav-link dropdown-toggle pt-4 pb-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Andere kaarten</a>
-          <div class="dropdown-menu">
-            <div><a class="dropdown-item" href="index.html">Europa</a></div>
-            <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
-            <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
-          </div>
+  <header class="py-2 d-flex justify-content-center col-12">
+    <div class="col-10 d-flex justify-content-between flex-column flex-md-row">
+      <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Logo + Name</a></h1>
+      <nav class="d-flex text-center col-md-8">
+        <div class="col-4">
+          <a class="col-4" href="index.html">Flood Map</a>
         </div>
-        <a class="col-4 text-center py-4 m-0" href="#"><p class="m-0">Etc.</p></a>
-    </nav>
-</header>
-<div>
-  <h2 class="text-center m-4 title-weetjes">Weetjes</h2>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="weetjes.html">Facts</a>
+        </div>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="simulatie.html">Cost Simulation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+<div class="d-flex justify-content-center text-center mt-4">
+  <h2 class="text-center m-4 title-weetjes">List of all facts</h2>
 </div>
-<ul id="list-of-facts" class="col-10 offset-1 text-center d-flex"></ul>
+<div class="d-flex justify-content-center">
+  <div class="bottom-line col-6 text-center my-3"></div>
+</div>
+<ul id="list-of-facts" class="d-flex justify-content-center col-10 offset-1 text-center"></ul>
 
-
+<footer>
+  <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
+    <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
+    information independently for accuracy.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="text-center">
+    <p class="mb-0 mt-5 py-4">Copyright &copy;<a class="link-footer" href="https://thomasmore.be/nl">Thomasmore</a> - 2024</p>
+  </div>
+</footer>
 <script src="../js/weetjespage.js"></script>
 </body>
 

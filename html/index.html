@@ -26,55 +26,47 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-  
+
 <body class="col-12">
   <header class="py-2 d-flex justify-content-center col-12">
     <div class="col-10 d-flex justify-content-between flex-column flex-md-row">
       <h1 class="text-center py-4 m-0 px-3 col-md-4"><a class="title" href="index.html">Logo + Name</a></h1>
       <nav class="d-flex text-center col-md-8">
-        <a class="col-4" href="index.html">Flood Map</a>
-        <a class="col-4 text-center py-4 m-0" href="weetjes.html">
-          <p class="m-0">Facts</p>
-        </a>
-        <!--
-        <div class="nav-item dropdown col-4 text-center m-0">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">Andere kaarten</a>
-          <div class="dropdown-menu">
-            <div><a class="dropdown-item" href="index.html">Europa</a></div>
-            <div><a class="dropdown-item" href="noord-amerika.html">Noord-Amerika</a></div>
-            <div><a class="dropdown-item" href="zuid-amerika.html">Zuid-Amerika</a></div>
-          </div>
+        <div class="col-4">
+          <a class="col-4" href="index.html">Flood Map</a>
         </div>
-        -->
-        <a class="col-4 text-center py-4 m-0" href="#">
-          <p class="m-0">Kosten simulatie</p>
-        </a>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="weetjes.html">Facts</a>
+        </div>
+        <div class="col-4">
+          <a class="col-4 text-center m-0" href="simulatie.html">Cost Simulation</a>
+        </div>
       </nav>
     </div>
   </header>
 
   <div class="content col-10 offset-1">
     <div class="d-flex flex-column text-center col-8 offset-2 mt-5">
-        <h3>Interactive Maps: Flood Risk and Climate Data Visualization</h3>
-        <p>Explore our interactive maps to assess flood risk in your area and track temperature and CO2 levels. Gain insights into climate trends and potential environmental hazards.</p>
+      <h3>Interactive Maps: Flood Risk and Climate Data Visualization</h3>
+      <p>Explore our interactive maps to assess flood risk in your area and track temperature and CO2 levels. Gain
+        insights into climate trends and potential environmental hazards.</p>
     </div>
     <div class="d-flex justify-content-center">
       <div class="bottom-line col-6 text-center m-5"></div>
     </div>
 
     <div class="subject mb-5">
-      <div class="info ">
-        <p>Voer in de onderstaande slider de hoogte van het water in en zie hoe de kaart overstroomt!</p>
+      <div class="info text-center mb-5">
+        <p>Adjust the slider below to view the water level changes on the map!</p>
       </div>
       <div class="d-flex flex-column flex-lg-row">
         <div class="px-3 w-100 mb-4">
-          <label for="customRange3" class="form-label">Waterniveau (in meter)</label>
-          <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
           <p id="StijgingWater">Stijging: 0 meter</p>
-          <p>Totale oppervlakte Europa: 10 530 000 km²</p>
-          <p id="oppervlakte">Totale oppervlakte onder water: </p>
-          <p class="pt-4">Random fact:</p>
+          <input type="range" class="form-range" min="0" max="5" step="1" value="0" id="SliderWaterLevel">
+          <p class="additional-info">Additional info:</p>
+          <p>Total area surface of Europe: 10 530 000 km²</p>
+          <p id="oppervlakte">Total area surface under water: </p>
+          <p class="pt-4 random-fact-title">Random fact:</p>
           <p id="random-fact"></p>
         </div>
         <div class="w-100">
@@ -96,7 +88,7 @@
           <p id="StijgingWater">Stijging: 0 meter</p>
           <p>Totale oppervlakte Europa: 10 530 000 km²</p>
           <p id="oppervlakte">Totale oppervlakte onder water: </p>
-          <p class="pt-4">Random fact:</p>
+          <p class="pt-4 random-fact-title">Random fact:</p>
           <p id="random-fact"></p>
         </div>
         <div class="w-100">
@@ -104,19 +96,16 @@
         </div>
       </div>
     </div>
-    <a class="col-4 text-center py-4 m-0" href="#">
-      <p class="m-0">Etc.</p>
-    </a>
-  </nav>
-</header>
-
-    <footer>
-      <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
-        <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
-        information independently for accuracy.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
   </div>
+  <footer>
+    <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
+      <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
+      information independently for accuracy.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="text-center">
+      <p class="mb-0 mt-5 py-4">Copyright &copy;<a class="link-footer" href="https://thomasmore.be/nl">Thomasmore</a> - 2024</p>
+    </div>
   </footer>
 
   <script src="../js/main.js"></script>
