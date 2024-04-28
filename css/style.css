@@ -28,7 +28,7 @@ nav a:hover{
     border-bottom: solid 2px black;
 }
 
-img{
+.content img{
     background-color: #1e88ff;
     border-radius: 10px;
 }
@@ -172,5 +172,17 @@ footer{
     font-weight: 600;
     font-size: 20px;
     display: none;
+}
+
+#BelgiëText, #FrankrijkText, #NederlandText{
+    visibility: hidden;
+} 
+
+header img{
+    width: 50px;
+}
+
+.logo-and-title{
+    align-items: center;
 }
 
