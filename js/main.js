@@ -21,27 +21,27 @@ function adjustWaterLevel(){
         case '1':
             image.src = "../img/Maps/5Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 5 meter"
-            oppervlakte.innerHTML = "Totale oppervlakte onder water: 60749.46 km²"
+            oppervlakte.innerHTML = "Totale oppervlakte onder water: 60 749.46 km²"
             break;
         case '2':
             image.src = "../img/Maps/15Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 15 meter"
-            oppervlakte.innerHTML = "Totale oppervlakte onder water: 78981.93 km²"
+            oppervlakte.innerHTML = "Totale oppervlakte onder water: 78 981.93 km²"
             break;
         case '3':
             image.src = "../img/Maps/25Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 25 meter"
-            oppervlakte.innerHTML = "Totale oppervlakte onder water: 179539.91 km²"
+            oppervlakte.innerHTML = "Totale oppervlakte onder water: 179 539.91 km²"
             break;
         case '4':
             image.src = "../img/Maps/50Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 50 meter"
-            oppervlakte.innerHTML = "Totale oppervlakte onder water: 439333.99 km²"
+            oppervlakte.innerHTML = "Totale oppervlakte onder water: 439 333.99 km²"
             break;
         case '5':
             image.src = "../img/Maps/100Meuropa.png"
             stijgingWater.innerHTML = "Stijging: 100 meter"
-            oppervlakte.innerHTML = "Totale oppervlakte onder water: 884911.21 km²"
+            oppervlakte.innerHTML = "Totale oppervlakte onder water: 884 911.21 km²"
             break;
     }
 }
