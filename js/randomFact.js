@@ -26,9 +26,12 @@ function generateRandomFact(){
     }
 
     const randomInteger = getRandomInteger(0, 17);
+    const randomInteger1 = getRandomInteger(0, 17);
     console.log(randomInteger);
+    console.log(randomInteger1);
 
     document.getElementById("random-fact").innerHTML = facts[randomInteger]
+    document.getElementById("random-fact1").innerHTML = facts[randomInteger1]
 }
 
 generateRandomFact();
