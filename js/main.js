@@ -2,10 +2,11 @@
 let slider = document.getElementById('SliderWaterLevel');
 let slider1 = document.getElementById('SliderJaarGepasseerd');
 let image = document.getElementById('WaterFloodMap');
+let image1 = document.getElementById('TemperatureMap');
 let stijgingWater = document.getElementById('StijgingWater');
 let JaarGepasseerd = document.getElementById('JaarGepasseerd');
 let oppervlakte = document.getElementById("oppervlakte")
-let temperature = document.getElementById("oppervlakte")
+let temperature = document.getElementById("temperature")
 
 //variables json
 
@@ -55,38 +56,45 @@ function adjustYearsPassed(){
 
   switch (slider1Value){
     case '0':
-      image.src = ""
+      image1.src = "../img/filler-map.webp"
       JaarGepasseerd.innerHTML = "Temperature in 2019"
-      oppervlakte.innerHTML = ""
+      temperature.innerHTML = ""
       break;
     case '1':
-      image.src = ""
+      image1.src = "../img/filler-map.webp"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 1 Year"
-      oppervlakte.innerHTML = "Total surface area under water: 60 749.46 km²"
+      temperature.innerHTML = "Total increase of temperature in Europa: 0,020458°C"
       break;
     case '2':
-      image.src = ""
+      image1.src = "../img/filler-map.webp"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 10 Years"
-      oppervlakte.innerHTML = "Totale oppervlakte onder water: 78 981.93 km²"
+      temperature.innerHTML = "Total increase of temperature in Europa: 0,204585°C"
       break;
     case '3':
-      image.src = ""
+      image1.src = "../img/filler-map.webp"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 50 Years"
-      oppervlakte.innerHTML = "Totale oppervlakte onder water: 179 539.91 km²"
+      temperature.innerHTML = "Total increase of temperature in Europa: 1,022924°C"
       break;
     case '4':
-      image.src = ""
+      image1.src = "../img/filler-map.webp"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 100 Years"
-      oppervlakte.innerHTML = "Totale oppervlakte onder water: 439 333.99 km²"
+      temperature.innerHTML = "Total increase of temperature in Europa: 2,045848°C"
       break;
     case '5':
-      image.src = ""
-      stijgingWater.innerHTML = "Years passed after 2019: 500 Years"
-      oppervlakte.innerHTML = "Totale oppervlakte onder water: 884 911.21 km²"
+      image1.src = "../img/filler-map.webp"
+      JaarGepasseerd.innerHTML = "Years passed after 2019: 200 Years"
+      temperature.innerHTML = "Total increase of temperature in Europa: 4,091696°C"
+      break;
+    case '6':
+      image1.src = "../img/filler-map.webp"
+      JaarGepasseerd.innerHTML = "Years passed after 2019: 500 Years"
+      temperature.innerHTML = "Total increase of temperature in Europa: 10,22924°C"
       break;
   }
 }
 
 adjustWaterLevel();
+adjustYearsPassed();
 
 slider.addEventListener('input', adjustWaterLevel);
+slider1.addEventListener('input', adjustYearsPassed);
