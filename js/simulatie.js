@@ -55,7 +55,7 @@ button.addEventListener("click", function() {
   // eindberekening
   kosten *= multiplier;
   resultaat.style.display = "block"
-  resultaatTekst = "Rough estimate of the damages to your property: €" + kosten;
+  resultaatTekst = "Rough estimate of the damages to your property: €" + Math.round(kosten, 2);
 
   // het resultaat tonen
   resultaat.innerHTML = resultaatTekst;

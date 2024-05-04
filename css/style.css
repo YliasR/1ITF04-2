@@ -186,3 +186,21 @@ header img{
     align-items: center;
 }
 
+.nav-item{
+    margin-left: 10px;
+    border: 3px solid transparent;
+    margin-bottom: -3px;
+    color: black;
+}
+
+.active{
+    border: 3px solid #C8E0F4;
+    border-radius: 8px 8px 0 0; /* Slightly rounded top corners */
+    border-bottom: none; /* Clear bottom border */
+    cursor: pointer;
+}
+
+.subject-2{
+    height: 600px;
+}
+

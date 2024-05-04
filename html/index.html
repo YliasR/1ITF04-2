@@ -87,26 +87,43 @@
         </div>
       </div>
     </div>
-
-    <div class="subject">
-      <div class="info p-3 my-4">
-        <p>Adjust the slider below to view the temperature changes on the map!</p>
+    <div class="subject mb-5 subject-2">
+      <div class="info text-center mb-5">
+        <p>Adjust the slider to view the temperature change in Europe upcoming 500 years!</p>
       </div>
-      <div class="d-flex flex-column flex-lg-row">
-        <div class="px-3 w-100 mb-4">
-          <p id="JaarGepasseerd"></p>
-          <input type="range" class="form-range" min="0" max="6" step="1" value="0" id="SliderJaarGepasseerd">
-          <p class="additional-info">Additional info:</p>
+      <div class="">
+        <div class="d-flex flex-column flex-lg-row">
+          <div class="px-3 w-100 mb-4">
+            <p id="JaarGepasseerd"></p>
+            <input type="range" class="form-range" min="0" max="6" step="1" value="0" id="SliderJaarGepasseerd">
+            <p class="additional-info">Additional info:</p>
             <p id="temperature"></p>
-          <p class="pt-4 random-fact-title">Random fact:</p>
-          <p id="random-fact1"></p>
-        </div>
-        <div class="w-100">
-          <img id="TemperatureMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
+            <p class="pt-4 random-fact-title">Random fact:</p>
+            <p id="random-fact1"></p>
+          </div>
+          <div class="w-100 position-relative">
+            <div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item" id="select-map">
+                  <a class="nav-link" aria-current="page" onclick="selectTemperatureMap()">Map</a>
+                </li>
+                <li class="nav-item" id="select-countries">
+                  <a class="nav-link" onclick="selectGraphCountries()">Graph Countries</a>
+                </li>
+                <li class="nav-item" id="select-europe">
+                  <a class="nav-link" onclick="selectGraphEurope()">Graph Europe</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img id="TemperatureMap" class="w-100 h-auto" src="../img/Maps/100Meuropa.png" alt="Temperature Map">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <footer>
     <div class="alert alert-warning alert-dismissible fade show text-center py-4 col-3" role="alert">
       <strong>This is a proof of concept!</strong> Data used in this website is subject to human error! Please verify
@@ -114,7 +131,8 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <div class="text-center">
-      <p class="mb-0 mt-5 py-4">Copyright &copy;<a class="link-footer" href="https://thomasmore.be/nl">Thomasmore</a> - 2024</p>
+      <p class="mb-0 mt-5 py-4">Copyright &copy;<a class="link-footer" href="https://thomasmore.be/nl">Thomasmore</a> -
+        2024</p>
     </div>
   </footer>
 
