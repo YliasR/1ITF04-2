@@ -64,39 +64,39 @@ function adjustYearsPassed(){
   
   switch (slider1Value){
     case '0':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature.png"
       JaarGepasseerd.innerHTML = "Temperature in 2019"
       temperature.innerHTML = ""
       break;
     case '1':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-1-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 1 Year"
-      temperature.innerHTML = "Total increase of temperature in Europa: 0,020458°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 0,02°C"
       break;
     case '2':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-10-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 10 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 0,204585°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 0,20°C"
       break;
     case '3':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-50-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 50 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 1,022924°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 1,02°C"
       break;
     case '4':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-100-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 100 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 2,045848°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 2,05°C"
       break;
     case '5':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-200-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 200 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 4,091696°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 4,09°C"
       break;
     case '6':
-      image1.src = "../img/Maps/europe.png"
+      image1.src = "../img/Maps/europe-temperature-500-year.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 500 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 10,22924°C"
+      temperature.innerHTML = "Total increase of temperature in Europa: 10,23°C"
       break;
   }
 }
@@ -115,7 +115,9 @@ function selectTemperatureMap(){
   navMap.classList.add('active');
   navCountries.classList.remove('active');
   navEurope.classList.remove('active');
-  imgGraphMap.src="../img/Maps/europe.png"
+  imgGraphMap.src="../img/Maps/europe.png";
+
+  adjustYearsPassed();
 }
 
 function selectGraphCountries(){
