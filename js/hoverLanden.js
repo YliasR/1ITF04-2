@@ -46,34 +46,34 @@ document.addEventListener("DOMContentLoaded", function() {
         var sliderWaarde = slider.value;
         switch (sliderWaarde){
           case '0':
-            popupBelgië.textContent = "België 0m \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 0m \r\n";
+            popupBelgië.textContent += "Surface flooded: 0km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 0%"
             break;
           case '1':
-            popupBelgië.textContent = "België 5m \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 5m \r\n";
+            popupBelgië.textContent += "Surface flooded: 2457km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 8.01%"
             break;
           case '2':
-            popupBelgië.textContent = "België 15 \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 15m \r\n";
+            popupBelgië.textContent += "Surface flooded: 5758km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 18.76%"
             break;
           case '3':
-            popupBelgië.textContent = "België 25m \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 25m \r\n";
+            popupBelgië.textContent += "Surface flooded: 6158km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 20.07%"
             break;
           case '4':
-            popupBelgië.textContent = "België 50m \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 50m \r\n";
+            popupBelgië.textContent += "Surface flooded: 11370km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 37.05%"
             break;
           case '5':
-            popupBelgië.textContent = "België 100m \r\n";
-            popupBelgië.textContent += "Oppervlakte onder water: \r\n";
-            popupBelgië.textContent += "Schade per km²: "
+            popupBelgië.textContent = "Belgium 100m \r\n";
+            popupBelgië.textContent += "Surface flooded: 12954km²\r\n";
+            popupBelgië.textContent += "Percentage underwater: 42.21%"
             break;
         }
         popupBelgië.style.left = x-800 + "px";
@@ -84,34 +84,34 @@ document.addEventListener("DOMContentLoaded", function() {
         var sliderWaarde = slider.value;
         switch (sliderWaarde){
           case '0':
-            popupNederland.textContent = "Nederland 0m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 0m \r\n";
+            popupNederland.textContent += "Surface flooded: 0km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 0%"
             break;
           case '1':
-            popupNederland.textContent = "Nederland 5m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 5m \r\n";
+            popupNederland.textContent += "Surface flooded: 26099km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 62.82%"
             break;
           case '2':
-            popupNederland.textContent = "Nederland 15m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 15m \r\n";
+            popupNederland.textContent += "Surface flooded: 31380km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 75.54%"
             break;
           case '3':
-            popupNederland.textContent = "Nederland 25m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 25m \r\n";
+            popupNederland.textContent += "Surface flooded: 32380km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 77.94%"
             break;
           case '4':
-            popupNederland.textContent = "Nederland 50m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 50m \r\n";
+            popupNederland.textContent += "Surface flooded: 39900km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 96.05%"
             break;
           case '5':
-            popupNederland.textContent = "Nederland 100m \r\n";
-            popupNederland.textContent += "Oppervlakte onder water: \r\n";
-            popupNederland.textContent += "Schade per km²: "
+            popupNederland.textContent = "Netherlands 100m \r\n";
+            popupNederland.textContent += "Surface flooded: 41500km²\r\n";
+            popupNederland.textContent += "Percentage underwater: 99.89%"
             break;
         }
         popupNederland.style.left = x-800 + "px";
@@ -122,34 +122,34 @@ document.addEventListener("DOMContentLoaded", function() {
         var sliderWaarde = slider.value;
         switch (sliderWaarde){
           case '0':
-            popupFrankrijk.textContent = "Frankrijk 0m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 0m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 0km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 0%"
             break;
           case '1':
-            popupFrankrijk.textContent = "Frankrijk 5m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 5m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 1863km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 0.34%"
             break;
           case '2':
-            popupFrankrijk.textContent = "Frankrijk 15m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 15m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 2941km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 0.54%"
             break;
           case '3':
-            popupFrankrijk.textContent = "Frankrijk 25m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 25m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 5709km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 1.04%"
             break;
           case '4':
-            popupFrankrijk.textContent = "Frankrijk 50m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 50m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 32300km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 5.90%"
             break;
           case '5':
-            popupFrankrijk.textContent = "Frankrijk 100m \r\n";
-            popupFrankrijk.textContent += "Oppervlakte onder water: \r\n";
-            popupFrankrijk.textContent += "Schade per km²: "
+            popupFrankrijk.textContent = "France 100m \r\n";
+            popupFrankrijk.textContent += "Surface flooded: 91580km²\r\n";
+            popupFrankrijk.textContent += "Percentage underwater: 16.74%"
             break;
         }
         popupFrankrijk.style.left = x-800 + "px";
@@ -160,9 +160,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.addEventListener("click", function(event) {
-    if (!event.target.closest(".svg-overlay circle")) {
+    if (!event.target.closest(".svg-overlay #België")) {
       popupBelgië.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(event) {
+    if (!event.target.closest(".svg-overlay #Nederland")) {
       popupNederland.style.display = "none";
+    }
+  });
+  document.addEventListener("click", function(event) {
+    if (!event.target.closest(".svg-overlay #Frankrijk")) {
       popupFrankrijk.style.display = "none";
     }
   });
