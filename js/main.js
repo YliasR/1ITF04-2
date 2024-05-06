@@ -11,6 +11,7 @@ let navMap = document.getElementById("select-map");
 let navCountries = document.getElementById("select-countries");
 let navEurope = document.getElementById("select-europe");
 let imgGraphMap = document.getElementById("TemperatureMap")
+let additionalInfo = document.getElementById("additional-info")
 
 //variables json
 
@@ -65,38 +66,46 @@ function adjustYearsPassed(){
   switch (slider1Value){
     case '0':
       image1.src = "../img/Maps/europe-temperature-colors.png"
-      JaarGepasseerd.innerHTML = "Temperature in 2019"
+      JaarGepasseerd.innerHTML = "Average temperature in 2019"
       temperature.innerHTML = ""
+      additionalInfo.classList.add("Hidden")
+      additionalInfo.classList.remove("Visible")
       break;
     case '1':
       image1.src = "../img/Maps/europe-1-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 1 Year"
-      temperature.innerHTML = "Total increase of temperature in Europa: 0,02°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 0,02°C"
+      additionalInfo.classList.add("Visible")
       break;
     case '2':
       image1.src = "../img/Maps/europe-10-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 10 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 0,20°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 0,20°C"
+      additionalInfo.classList.add("Visible")
       break;
     case '3':
       image1.src = "../img/Maps/europe-50-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 50 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 1,02°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 1,02°C"
+      additionalInfo.classList.add("Visible")
       break;
     case '4':
       image1.src = "../img/Maps/europe-100-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 100 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 2,05°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 2,05°C"
+      additionalInfo.classList.add("Visible")
       break;
     case '5':
       image1.src = "../img/Maps/europe-200-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 200 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 4,09°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 4,09°C"
+      additionalInfo.classList.add("Visible")
       break;
     case '6':
       image1.src = "../img/Maps/europe-500-colors.png"
       JaarGepasseerd.innerHTML = "Years passed after 2019: 500 Years"
-      temperature.innerHTML = "Total increase of temperature in Europa: 10,23°C"
+      temperature.innerHTML = "Total increase of average temperature in Europa: 10,23°C"
+      additionalInfo.classList.add("Visible")
       break;
   }
 }
