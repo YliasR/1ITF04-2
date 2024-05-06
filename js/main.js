@@ -12,6 +12,7 @@ let navCountries = document.getElementById("select-countries");
 let navEurope = document.getElementById("select-europe");
 let imgGraphMap = document.getElementById("TemperatureMap")
 let additionalInfo = document.getElementById("additional-info")
+let additionalInfoWater = document.getElementById("additional-info-water")
 
 //variables json
 
@@ -26,31 +27,38 @@ function adjustWaterLevel(){
             image.src = "../img/Maps/europe.png"
             stijgingWater.innerHTML = "Increase in water level: 0m"
             oppervlakte.innerHTML = ""
+            additionalInfoWater.classList.add("Hidden")
+            additionalInfoWater.classList.remove("Visible")
             break;
         case '1':
             image.src = "../img/Maps/5Meuropa.png"
             stijgingWater.innerHTML = "Increase in water level: 5m"
             oppervlakte.innerHTML = "Total surface area under water: 60 749.46 km²"
+            additionalInfoWater.classList.add("Visible")
             break;
         case '2':
             image.src = "../img/Maps/15Meuropa.png"
             stijgingWater.innerHTML = "Increase in water level: 15m"
             oppervlakte.innerHTML = "Total surface area under water: 78 981.93 km²"
+            additionalInfoWater.classList.add("Visible")
             break;
         case '3':
             image.src = "../img/Maps/25Meuropa.png"
             stijgingWater.innerHTML = "Increase in water level: 25m"
             oppervlakte.innerHTML = "Total surface area under water: 179 539.91 km²"
+            additionalInfoWater.classList.add("Visible")
             break;
         case '4':
             image.src = "../img/Maps/50Meuropa.png"
             stijgingWater.innerHTML = "Increase in water level: 50m"
             oppervlakte.innerHTML = "Total surface area under water: 439 333.99 km²"
+            additionalInfoWater.classList.add("Visible")
             break;
         case '5':
             image.src = "../img/Maps/100Meuropa.png"
             stijgingWater.innerHTML = "Increase in water level: 100m"
             oppervlakte.innerHTML = "Total surface area under water: 884 911.21 km²"
+            additionalInfoWater.classList.add("Visible")
             break;
     }
 }
