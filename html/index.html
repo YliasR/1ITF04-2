@@ -77,11 +77,11 @@
           <img id="WaterFloodMap" class="w-100 h-auto" src="../img/filler-map.webp" alt="lege afbeelding">
           <svg class="svg-overlay position-absolute top-0 start-0">
             <circle id="België" class="circle" cx="46%" cy="58.75%" r="5" fill="black" opacity="0.5" />
-            <text id="BelgiëText" x="48%" y="59%" fill="black" font-size="12">België</text>
+            <text id="BelgiëText" x="48%" y="59%" fill="black" font-size="12">Belgium</text>
             <circle id="Frankrijk" class="circle" cx="43%" cy="66%" r="5" fill="black" opacity="0.5" />
-            <text id="FrankrijkText" x="45%" y="66%" fill="black" font-size="12">Frankrijk</text>
+            <text id="FrankrijkText" x="45%" y="66%" fill="black" font-size="12">France</text>
             <circle id="Nederland" class="circle" cx="46.5%" cy="55.5%" r="5" fill="black" opacity="0.5" />
-            <text id="NederlandText" x="48%" y="55.5%" fill="black" font-size="12">Nederland</text>
+            <text id="NederlandText" x="48%" y="55.5%" fill="black" font-size="12">The Netherlands</text>
           </svg>
           <div id="popupBelgië" class="popup position-absolute top-0 start-50"></div>
           <div id="popupNederland" class="popup position-absolute top-0 start-50"></div>
@@ -91,14 +91,14 @@
     </div>
     <div class="subject mb-5 subject-2">
       <div class="info text-center mb-5">
-        <p>Adjust the slider to view the temperature change in Europe upcoming 500 years!</p>
+        <p>Adjust the slider to view the average temperature change in Europe upcoming 500 years! (°C)</p>
       </div>
       <div class="">
         <div class="d-flex flex-column flex-lg-row">
           <div class="px-3 w-100 mb-4">
             <p id="JaarGepasseerd"></p>
             <input type="range" class="form-range" min="0" max="6" step="1" value="0" id="SliderJaarGepasseerd">
-            <p class="additional-info">Additional info:</p>
+            <p class="additional-info" id="additional-info">Additional info:</p>
             <p id="temperature"></p>
             <p class="pt-4 random-fact-title">Did you know?</p>
             <p id="random-fact1"></p>

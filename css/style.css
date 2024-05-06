@@ -203,3 +203,11 @@ header img{
 .subject-2{
     height: 600px;
 }
+
+.Hidden{
+    visibility: hidden;
+}
+
+.Visible{
+    visibility: visible;
+}
